@@ -112,9 +112,6 @@ export function SiteFooter() {
             <span>
               Designed and development by <span className="font-semibold text-gold">SOSynch Ai Tech</span>
             </span>
-            <Link to="/admin/login" className="opacity-60 transition hover:opacity-100">
-              Admin
-            </Link>
           </p>
         </div>
       </div>

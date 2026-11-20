@@ -14,7 +14,7 @@ export function ApplicationForm({ position, onDone }: { position: string; onDone
   const openJobs = data.jobs.filter((j) => j.status === "Open");
   const [v, setV] = useState<Values>({ name: "", email: "", mobile: "", position, experience: "", coverNote: "" });
   const [file, setFile] = useState<File | null>(null);
-  const [errors, setErrors] = useState<Partial<Record<keyof Values | "file", string>>>({});
+  const [errors, setErrors] = useState<Partial<Record<keyof Values | "file", string | undefined>>>({});
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState(false);
 

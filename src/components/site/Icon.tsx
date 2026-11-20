@@ -85,7 +85,7 @@ export function Icon({ name, size = 20, strokeWidth = 1.75, ...rest }: IconProps
       </svg>
     );
   }
-  const d = PATHS[name] ?? PATHS.sparkles;
+  const d = PATHS[name] ?? PATHS["sparkles"];
   return (
     <svg
       width={size}

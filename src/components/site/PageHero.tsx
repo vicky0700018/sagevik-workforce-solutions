@@ -68,11 +68,11 @@ export function CtaBand({
               <p className="mt-4 text-navy-muted">{text}</p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link to={primary.to} hash={primary.hash} className="btn btn-gold">
+              <Link to={primary.to} {...(primary.hash ? { hash: primary.hash } : {})} className="btn btn-gold">
                 {primary.label} <Icon name="arrow-right" size={16} />
               </Link>
               {secondary ? (
-                <Link to={secondary.to} hash={secondary.hash} className="btn btn-outline-light">
+                <Link to={secondary.to} {...(secondary.hash ? { hash: secondary.hash } : {})} className="btn btn-outline-light">
                   {secondary.label}
                 </Link>
               ) : null}
